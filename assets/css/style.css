@@ -210,7 +210,8 @@ section {
 }
 
 .hero-image.primary {
-  aspect-ratio: 4 / 5;
+  max-height: 70svh;
+  object-fit: contain;
   background-image: linear-gradient(135deg, rgba(255, 210, 150, 0.85), rgba(219, 169, 126, 0.95));
 }
 
@@ -225,7 +226,7 @@ section {
 .hero-content h1 {
   font-size: clamp(2.8rem, 4.5vw, 4rem);
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .hero-content p {
@@ -372,9 +373,15 @@ section {
   border-radius: var(--radius-lg);
   padding: 56px 48px;
   display: grid;
-  gap: 24px;
+  gap: 20px;
   box-shadow: var(--shadow-soft);
 }
+
+.story-panel h2 {
+  font-size: 36px;
+}
+
+
 
 .story-panel.media {
   display: flex;
@@ -594,6 +601,16 @@ section {
   border-radius: var(--radius-lg);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 227, 193, 0.25));
+  overflow: hidden;
+}
+
+.final-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 227, 193, 0.25));
 }
 
 .site-footer {
@@ -686,6 +703,15 @@ section {
   max-width: 420px;
   width: 100%;
 }
+.interactive-card img[src=""] {
+  object-fit: contain;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(43, 33, 23, 0.5);
+  text-align: center;
+}
 
 .interactive-card img {
   width: 100%;
@@ -694,6 +720,7 @@ section {
   border-radius: var(--radius-md);
   filter: saturate(1.08);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  background: linear-gradient(135deg, rgba(240, 223, 203, 0.45), rgba(217, 176, 129, 0.45));
 }
 
 .interactive-card figcaption {
@@ -743,7 +770,11 @@ section {
 }
 
 .interactive-caption {
+  grid-column: 1 / -1;
   justify-self: center;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  margin-top: -24px;
   background: rgba(43, 33, 23, 0.88);
   color: #fff;
   padding: 12px 28px;
