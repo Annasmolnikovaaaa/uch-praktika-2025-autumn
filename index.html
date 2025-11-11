@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKIN1004 — Natural Glow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/cursor.js@latest/dist/cursor.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="announcement">PROMO SALE 20%</div>
+      <div class="header-bar">
+        <nav class="main-nav">
+          <a href="#intro">Shop</a>
+          <a href="#story">About</a>
+          <a href="#gallery">Contacts</a>
+          <a href="#showcase">Blog</a>
+        </nav>
+        <div class="brand">SKIN1004</div>
+        <button class="cart-btn" type="button" aria-label="Корзина">
+          Cart <span>0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="intro">
+        <div class="hero-media">
+          <div class="hero-image primary"></div>
+          <div class="hero-image secondary"></div>
+        </div>
+        <div class="hero-content">
+          <h1>
+            Natural, organic,<br />
+            plant-based skincare<br />
+            rich in nutrients
+          </h1>
+          <p>
+            Наши уникальные, сертифицированные органические линейки по уходу за кожей
+            разработаны лабораторией SKIN1004.
+          </p>
+          <a class="btn" href="#gallery">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="best-sellers" id="story">
+        <div class="section-head">
+          <h2>Bestsellers</h2>
+          <p>Топ-коллекция средств Centella для баланса кожи и сияния.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <figure class="product-thumb" data-placeholder="Placeholder: Ampoule product image">
+              <img
+                class="product-photo"
+                src="assets/img/image.png"
+                alt="Placeholder: Ampoule product image"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Ampoule</h3>
+            <p class="price">$15.50</p>
+            <p class="excerpt">Soothing ampoule<br />Centella Asiatica Extract</p>
+            <button type="button">В корзину</button>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb" data-placeholder="Placeholder: Tone ampoule product image">
+              <img
+                class="product-photo"
+                src=""
+                alt="Placeholder: Tone ampoule product image"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Tone Ampoule</h3>
+            <p class="price">$18.00</p>
+            <p class="excerpt">Absorbing ampoule<br />Madecassoside</p>
+            <button type="button">В корзину</button>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb" data-placeholder="Placeholder: Suncream product image">
+              <img
+                class="product-photo"
+                src=""
+                alt="Placeholder: Suncream product image"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Suncream</h3>
+            <p class="price">$19.90</p>
+            <p class="excerpt">Centella air-fit sunscreen<br />Light SPF50 PA+++</p>
+            <button type="button">В корзину</button>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb" data-placeholder="Placeholder: Cream product image">
+              <img
+                class="product-photo"
+                src=""
+                alt="Placeholder: Cream product image"
+                loading="lazy"
+              />
+            </figure>
+            <h3>Cream</h3>
+            <p class="price">$13.00</p>
+            <p class="excerpt">Centella cream<br />Centella Asiatica Extract</p>
+            <button type="button">В корзину</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="interactive-gallery" id="gallery">
+        <div class="section-head">
+          <h2>Interactive Gallery</h2>
+          <p>Выбери свой ритуал ухода: восемь концентратов с уникальными текстурами и ароматами.</p>
+        </div>
+        <div class="interactive-swiper swiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              data-caption="Centella Reset — мгновенное восстановление и сияние кожи."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-1.jpg"
+                  alt="Сыворотка Centella Reset в янтарной бутылочке на фоне масла"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Centella Reset</strong>
+                  Концентрат с азиатской центеллой для мгновенного восстановления.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="swiper-slide"
+              data-caption="Botanical Energy — сыворотка с микроводорослями для глубокого питания."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-2.jpg"
+                  alt="Флакон Botanical Energy с экстрактами на пастельном фоне"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Botanical Energy</strong>
+                  Сыворотка с микроводорослями и минералами для тонуса кожи.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="swiper-slide"
+              data-caption="Silky Shield — солнцезащитный барьер без липкого эффекта."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-3.jpg"
+                  alt="Средство Silky Shield на зеркальной поверхности с экзотическими цветами"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Silky Shield</strong>
+                  Легкий солнцезащитный флюид без липкости и белых следов.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="swiper-slide"
+              data-caption="Bloom Ritual — масляная эссенция для вечернего сияния кожи."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-4.jpg"
+                  alt="Bloom Ritual — масляная эссенция с лепестками на кремовом фоне"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Bloom Ritual</strong>
+                  Масляная эссенция с лепестками цветков для вечернего сияния.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="swiper-slide"
+              data-caption="Morning Dew — увлажняющий мист с витамином C."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-5.jpg"
+                  alt="Morning Dew — мист с витамином C рядом с половинкой апельсина"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Morning Dew</strong>
+                  Увлажняющий мист с витамином C и ферментами цитрусовых.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="swiper-slide"
+              data-caption="Velvet Night Mask — ночная маска для восстановления кожи."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-6.jpg"
+                  alt="Velvet Night Mask — ночная маска в стеклянной банке на фоне антрацитов"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Velvet Night Mask</strong>
+                  Питательная ночная маска с пробиотиками и керамидами.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="swiper-slide"
+              data-caption="Mineral Balance — балансирующий лосьон с минералами."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-7.jpg"
+                  alt="Mineral Balance — балансирующий лосьон среди натуральных минералов"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Mineral Balance</strong>
+                  Лосьон с минералами и экстрактом розмарина для баланса.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="swiper-slide"
+              data-caption="Alpine Mist Toner — охлаждающий тоник из альпийских трав."
+            >
+              <figure class="interactive-card">
+                <img
+                  src="assets/img/gallery-8.jpg"
+                  alt="Alpine Mist Toner — прозрачный тоник с травами и стеклянной пипеткой"
+                  loading="eager"
+                />
+                <figcaption>
+                  <strong>Alpine Mist Toner</strong>
+                  Охлаждающий тоник из альпийских трав с адаптогенами.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-pagination" aria-label="Пагинация интерактивной галереи"></div>
+          <div class="swiper-button-prev" aria-label="Предыдущий слайд"></div>
+          <div class="swiper-button-next" aria-label="Следующий слайд"></div>
+        </div>
+        <div class="interactive-caption" aria-live="polite"></div>
+      </section>
+
+      <section class="visual-story" id="visual">
+        <div class="story-panel">
+          <h2>Clean ingredients,<br />immediately satisfying</h2>
+          <p>
+            Тщательно подобранные формулы, активированные натуральными компонентами —
+            для сияния и защиты кожи. Переключайся между карточками, чтобы узнать больше.
+          </p>
+          <a class="btn" href="#showcase">Подробнее</a>
+        </div>
+        <div class="story-panel media">
+          <figure class="story-image">
+            <img
+              src=""
+              alt="Пример визуального блока — вставьте сюда изображение продукта"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="creative-showcase" id="showcase">
+        <h2>Creative Showcase</h2>
+        <div class="showcase-grid">
+          <article class="showcase-card">
+            <h3>Texture Science</h3>
+            <p>
+              Интерактивная диаграмма показывает баланс масел и экстрактов в каждом продукте.
+            </p>
+            <div class="progress" data-progress="78"></div>
+          </article>
+          <article class="showcase-card">
+            <h3>Eco Ritual</h3>
+            <p>
+              Экосистема ухода: от очищения до защиты. Рассмотри связь продуктов в рутине.
+            </p>
+            <div class="progress" data-progress="62"></div>
+          </article>
+          <article class="showcase-card">
+            <h3>Glow Timeline</h3>
+            <p>
+              Лента результатов клиентов: подсвечиваем ключевые этапы трансформации кожи.
+            </p>
+            <div class="progress" data-progress="90"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-impact" id="final">
+        <div class="final-content">
+          <h2>Feel the final impact</h2>
+          <p>
+            С нами кожа дышит и сияет. Подпишись на эксклюзивные запускы и получай советы от команды
+            дерматологов.
+          </p>
+          <form class="subscribe" action="" method="post">
+            <label class="sr-only" for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <button type="submit">Подписаться</button>
+          </form>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+        <div class="final-visual">
+          <div class="final-image"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 SKIN1004. All Rights Reserved.</p>
+      <a class="to-top" href="#top">Back to top</a>
+    </footer>
+
+    <div class="custom-cursor">
+      <span></span>
+    </div>
+  </body>
+</html>
