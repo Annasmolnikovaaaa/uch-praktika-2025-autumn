@@ -31,11 +31,21 @@ body {
   background: var(--bg-body);
   color: var(--text-main);
   line-height: 1.6;
+  cursor: none;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+img,
+figure,
+.product-thumb,
+.story-image,
+.final-image,
+.interactive-card img {
+  cursor: pointer;
 }
 
 a {
@@ -45,7 +55,7 @@ a {
 
 button {
   font: inherit;
-  cursor: pointer;
+  cursor: none;
 }
 
 .btn {
