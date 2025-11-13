@@ -36,39 +36,14 @@ function initProductPlaceholders() {
 }
 
 function initCustomCursor() {
-  const cursorEl = document.querySelector(".custom-cursor");
-  if (!cursorEl) return;
+  if (!window.Cursor || typeof window.Cursor !== "function") return;
 
-  const updateCursor = (event) => {
-    cursorEl.style.opacity = "1";
-    cursorEl.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
-  };
-
-  window.addEventListener("mousemove", updateCursor);
-
-  const focusTargets = document.querySelectorAll("a, button, .btn");
-  focusTargets.forEach((target) => {
-    target.addEventListener("mouseenter", () => {
-      cursorEl.style.width = "48px";
-      cursorEl.style.height = "48px";
-      cursorEl.style.borderColor = "rgba(217, 176, 129, 1)";
-    });
-
-    target.addEventListener("mouseleave", () => {
-      cursorEl.style.width = "24px";
-      cursorEl.style.height = "24px";
-      cursorEl.style.borderColor = "rgba(217, 176, 129, 0.8)";
-    });
+  new window.Cursor({
+    container: document.body,
+    className: "cursor-helper",
+    speed: 0.15,
+    ease: "expo.out"
   });
-
-  if (window.Cursor && typeof window.Cursor === "function") {
-    new window.Cursor({
-      container: document.body,
-      className: "cursor-helper",
-      speed: 0.15,
-      ease: "expo.out"
-    });
-  }
 }
 
 function initHeroParallax() {
