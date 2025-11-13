@@ -640,6 +640,48 @@ section {
   transform: translateY(-4px);
 }
 
+.cursor-helper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 2px solid rgba(217, 176, 129, 0.8);
+  z-index: 100;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transform: translate3d(-9999px, -9999px, 0);
+  transition: width 0.2s ease, height 0.2s ease, border 0.2s ease, opacity 0.2s ease;
+  backdrop-filter: blur(0.5px);
+}
+
+.cursor-helper span {
+  position: absolute;
+  inset: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -50%);
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.cursor-helper.is-visible {
+  opacity: 1;
+}
+
+.cursor-helper.is-hover {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(217, 176, 129, 1);
+}
+
+.cursor-helper.is-active span {
+  transform: translate(-50%, -50%) scale(0.75);
+}
+
 .interactive-gallery {
   background: var(--bg-panel);
   border-radius: var(--radius-lg);
